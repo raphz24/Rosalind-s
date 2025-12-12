@@ -1,0 +1,17 @@
+# Reverse complement
+
+def reverse_complement(dna_seq):
+
+    comp = ''
+    for c in dna_seq.upper():
+        if c == 'A':
+            comp = "T" + comp
+        elif c == 'T':
+            comp = "A" + comp
+        elif c == 'C':
+            comp = "G" + comp
+        elif c == 'G':
+            comp = "C" + comp
+    return comp
+
+print(reverse_complement("AAAACCCGGT"))
