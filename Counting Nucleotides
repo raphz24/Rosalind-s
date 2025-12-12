@@ -1,0 +1,11 @@
+def count_nucleotides(dna_seq):
+    dna_seq = dna_seq.upper()
+
+    counts = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
+    for nuc in dna_seq:
+        if nuc in counts:
+            counts[nuc] += 1
+    print(*[counts[n] for n in "ACGT"])
+
+count_nucleotides("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
+    
