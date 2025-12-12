@@ -1,0 +1,17 @@
+#Fibonacci rabbits
+
+def fib_rabbits(n,k):
+
+    rabbits = [0] * (n+1)
+    rabbits[1] = 1
+    rabbits[2] = 1
+
+    for i in range(3, n+1):
+        rabbits[i] = rabbits[i-1] + k * rabbits[i-2]
+
+    return rabbits[n]
+
+n=5
+k=3
+
+print(fib_rabbits(n,k))
