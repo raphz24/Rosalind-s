@@ -1,0 +1,8 @@
+#Transcription of DNA seqs
+
+def transcription(dna_seq):
+
+    rna_seq = dna_seq.upper().replace("T","U")
+    return rna_seq
+
+transcription("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
